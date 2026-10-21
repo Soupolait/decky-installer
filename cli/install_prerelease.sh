@@ -27,7 +27,7 @@ fi
 echo "Installing Steam Deck Plugin Loader pre-release..."
 
 USER_DIR="$(getent passwd $SUDO_USER | cut -d: -f6)"
-HOMEBREW_FOLDER="${USER_DIR}/homebrew"
+HOMEBREW_FOLDER="${USER_DIR}/.local/share/decky-loader"
 
 # Create folder structure
 sudo -u $SUDO_USER mkdir -p "${HOMEBREW_FOLDER}/plugins"

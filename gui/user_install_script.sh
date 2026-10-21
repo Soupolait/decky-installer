@@ -64,7 +64,7 @@ fi
 
 # all code below should be run as root
 USER_DIR="$(getent passwd $SUDO_USER | cut -d: -f6)"
-HOMEBREW_FOLDER="${USER_DIR}/homebrew"
+HOMEBREW_FOLDER="${USER_DIR}/.local/share/decky-loader"
 
 # if decky is already installed, then add 'uninstall' and 'wipe' option
 if [[ -f "${USER_DIR}/homebrew/services/PluginLoader" ]] ; then
